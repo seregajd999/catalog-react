@@ -1,0 +1,13 @@
+.Menu {
+  margin: 2em 0 3em;
+}
+
+.Menu > ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.Menu > ul > li {
+  width: 100%;
+}

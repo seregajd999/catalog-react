@@ -1,0 +1,30 @@
+{
+  "name": "catalog-react",
+  "version": "1.0.0",
+  "description": "Simple catalog",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitrylebedev/catalog-react.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmitrylebedev/catalog-react/issues"
+  },
+  "homepage": "https://github.com/dmitrylebedev/catalog-react#readme",
+  "devDependencies": {
+    "react-scripts": "^0.5.1"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.8.1"
+  }
+}
