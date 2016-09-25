@@ -1,21 +1,20 @@
 import React,
 {
-    Component,
-    PropTypes
+    Component
 } from 'react';
 
-class Cart extends Component {
+class CartPage extends Component {
     render() {
         return (
             <div>
-                Cart
+                CartPage
             </div>
         );
     }
 }
 
-Cart.propTypes = {
+CartPage.propTypes = {
 
 };
 
-export default Cart;
+export default CartPage;

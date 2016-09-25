@@ -11,24 +11,21 @@ import {
 import App from './App';
 import './index.css';
 
-import Index from './pages/Index';
-import Cart from './pages/Cart';
-import CatalogItem from './pages/CatalogItem';
-import Checkout from './pages/Checkout';
-import CatalogList from './pages/CatalogList';
-import CatalogListIndex from './pages/CatalogListIndex'
+import IndexPage from './pages/IndexPage';
+import CartPage from './pages/CartPage';
+import CatalogItemPage from './pages/CatalogItemPage';
+import CheckoutPage from './pages/CheckoutPage';
+import CatalogListPage from './pages/CatalogListPage';
 
 ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
-      <IndexRoute component={Index} />
-      <Route path="/cart" component={Cart}>
-        <Route path="/checkout" component={Checkout} />
+      <IndexRoute component={IndexPage} />
+      <Route path="/cart" component={CartPage}>
+        <Route path="/cart/checkout" component={CheckoutPage} />
       </Route>
-      <Route path="/catalog" component={CatalogList}>
-        <IndexRoute component={CatalogListIndex} />
-        <Route path="/:id" component={CatalogItem} />
-      </Route>
+      <Route path="/catalog" component={CatalogListPage} />
+      <Route path="/catalog/:itemId" component={CatalogItemPage} />
     </Route>
   </Router>
   ), document.getElementById('root')
