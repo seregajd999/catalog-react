@@ -3,14 +3,14 @@ import React,
   Component
 } from 'react';
 
-class Index extends Component {
+class IndexPage extends Component {
   render() {
     return (
-      <div className="Index">
+      <div className="IndexPage">
         Главная
       </div>
     );
   }
 }
 
-export default Index;
+export default IndexPage;

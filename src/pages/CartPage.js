@@ -1,22 +1,21 @@
 import React,
 {
-    Component, 
+    Component,
     PropTypes
 } from 'react';
 
-class Checkout extends Component {
+class CartPage extends Component {
     render() {
         return (
             <div>
-                Checkout
+                CartPage
             </div>
         );
     }
 }
 
-Checkout.propTypes = {
+CartPage.propTypes = {
 
 };
 
-export default Checkout;
-
+export default CartPage;
