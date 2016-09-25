@@ -16,19 +16,16 @@ import CartPage from './pages/CartPage';
 import CatalogItemPage from './pages/CatalogItemPage';
 import CheckoutPage from './pages/CheckoutPage';
 import CatalogListPage from './pages/CatalogListPage';
-import CatalogListIndexPage from './pages/CatalogListIndexPage'
 
 ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={IndexPage} />
       <Route path="/cart" component={CartPage}>
-        <Route path="/checkout" component={CheckoutPage} />
+        <Route path="/cart/checkout" component={CheckoutPage} />
       </Route>
-      <Route path="/catalog" component={CatalogListPage}>
-        <IndexRoute component={CatalogListIndexPage} />
-        <Route path="/:id" component={CatalogItemPage} />
-      </Route>
+      <Route path="/catalog" component={CatalogListPage} />
+      <Route path="/catalog/:itemId" component={CatalogItemPage} />
     </Route>
   </Router>
   ), document.getElementById('root')
