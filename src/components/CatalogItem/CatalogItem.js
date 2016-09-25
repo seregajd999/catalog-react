@@ -1,4 +1,8 @@
-import React, {Component, PropTypes} from 'react';
+import React,
+{
+  Component,
+  PropTypes
+} from 'react';
 
 class CatalogItem extends Component {
   render() {
@@ -8,7 +12,7 @@ class CatalogItem extends Component {
       <div className="CatalogItem">
 
         <div className="name">{item.name}</div>
-        <img className="picture" src={item.picture} />
+        <img className="picture" src={item.picture} alt={item.name} />
         <div className="descriprion">{item.descriprion}</div>
         <div className="price">{item.price}</div>
 

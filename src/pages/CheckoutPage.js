@@ -1,7 +1,6 @@
 import React,
 {
-    Component, 
-    PropTypes
+    Component
 } from 'react';
 
 class CheckoutPage extends Component {
