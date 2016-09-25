@@ -135,5 +135,19 @@
             "price": "1,954",
             "picture": "http://placehold.it/150x150"
         }
+    ],
+    "sitemap": [
+        {
+            "url": "/",
+            "name": "Главная"
+        },
+        {
+            "url": "/catalog",
+            "name": "Каталог"
+        },
+        {
+            "url": "/cart",
+            "name": "Корзина"
+        }
     ]
 }
