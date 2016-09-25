@@ -3,14 +3,14 @@ import React,
     Component
 } from 'react';
 
-import CatalogItemPage from './CatalogItemPage';
+import CatalogItemThumb from '../components/CatalogItemThumb/CatalogItemThumb';
 
 const STATE = require('../State.json');
 
 class CatalogListPage extends Component {
     render() {
         let items = STATE.products.map((item) => {
-            return <CatalogItemPage item={item} key={item._id} />;
+            return <CatalogItemThumb item={item} key={item._id} />;
         });
 
         return (
