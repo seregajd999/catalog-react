@@ -4,18 +4,20 @@ import React,
     PropTypes
 } from 'react';
 
+import CatalogItem from '../components/CatalogItem/CatalogItem';
+
 class CatalogItemPage extends Component {
     render() {
         return (
             <div className="CatalogItemPage">
-                {this.props.item.name}
+                <CatalogItem item={this.props.item} />
             </div>
         );
     }
 }
 
 CatalogItemPage.propTypes = {
-
+    item: PropTypes.object
 };
 
 export default CatalogItemPage;
