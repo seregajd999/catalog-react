@@ -1,0 +1,30 @@
+.CartItem
+{
+  margin: 1em;
+  display: flex;
+}
+
+.CartItem .name
+{
+  padding: 0 1em;
+  border-right: 1px solid lightblue;
+  min-width: 60%;
+}
+
+.CartItem .price
+{
+  padding: 0 1em;
+  border-right: 1px solid lightblue;
+}
+
+.CartItem .quantity
+{
+  padding: 0 1em;
+  border-right: 1px solid lightblue;
+}
+
+.CartItem .price-total
+{
+  padding: 0 1em;
+  border-right: 1px solid lightblue;
+}
