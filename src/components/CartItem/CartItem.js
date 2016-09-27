@@ -1,3 +1,5 @@
+/*eslint operator-assignment: ["error", "never"]*/
+
 import React,
 {
   Component,
@@ -6,7 +8,7 @@ import React,
 
 import { Link }  from 'react-router';
 
-import './CartItem.css'; 
+import './CartItem.css';
 
 
 class CartItem extends Component {
@@ -27,23 +29,25 @@ class CartItem extends Component {
 
     item.quantity = item.quantity + 1;
 
-    this.setState({
-      quantity: item.quantity
-    });
+    this.setQuantity(item.quantity);
   }
 
   decrease() {
     let item = this.props.item;
 
-     console.log(item.quantity);
+    if (item.quantity >= 1) {
+      item.quantity = item.quantity - 1;
+    }
 
-     if (item.quantity >= 1) {
-       item.quantity = item.quantity - 1;
-     }
+    this.setQuantity(item.quantity);
+  }
 
+  setQuantity(quantity) {
     this.setState({
-      quantity: item.quantity
+      quantity: quantity
     });
+
+    this.props.setItemQuantity(this.props.item._id, quantity);
   }
 
   render() {
@@ -60,7 +64,7 @@ class CartItem extends Component {
             <button className="decrease" onClick={this.decrease}>-</button>
           </div>
         </td>
-        <td className="price-total">{parseInt(item.price, 10) * this.state.quantity}</td>
+        <td className="price-total">{item.price * this.state.quantity}</td>
       </tr>
     );
   }
@@ -70,7 +74,7 @@ CartItem.propTypes = {
   item: PropTypes.shape({
     _id: PropTypes.string,
     name: PropTypes.string,
-    price: PropTypes.string,
+    price: PropTypes.number,
     quantity: PropTypes.number
   })
 };

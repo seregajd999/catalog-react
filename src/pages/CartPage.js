@@ -10,25 +10,67 @@ const STATE = require('../State.json');
 
 class CartPage extends Component {
 
-    componentWillMount() {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            totalPrice: 0
+        };
+
+        this.setItemQuantity = this.setItemQuantity.bind(this);
+
         this.cartItems = STATE.cart.map(cartItem => {
+            // Do not mutate
+            cartItem = Object.assign({}, cartItem);
+
             if (!cartItem.name) {
                 let product = STATE.products.find(productItem => cartItem._id === productItem._id);
                 cartItem.name = product.name;
                 cartItem.price = product.price;
             }
 
-            return <CartItem item={cartItem} key={cartItem._id}></CartItem>
-        });        
+            return cartItem;
+        });
+
+        this.cartItemsComponents = this.cartItems.map(cartItem => {
+            return (
+                <CartItem
+                    setItemQuantity={this.setItemQuantity}
+                    item={cartItem}
+                    key={cartItem._id}
+                    />)
+        });
     }
-    
+
+    componentDidMount() {
+        this.setTotalPrice();
+    }
+
+    setTotalPrice() {
+        let totalPrice = this.cartItems
+            .reduce((prev, current) => {
+                return (prev.price * prev.quantity) + (current.price * current.quantity)
+            });
+
+        this.setState({
+            totalPrice: totalPrice
+        });
+    }
+
+    setItemQuantity(id, quantity) {
+        let item = this.cartItems.find(item => item._id === id);
+
+        item.quantity = quantity;
+
+        this.setTotalPrice();
+    }
 
     render() {
         return (
             <div className="CartPage">
                 <h3>Корзина</h3>
 
-                <table style={{width: '100%'}}>
+                <table style={{ width: '100%' }}>
                     <thead>
                         <tr>
                             <th>Название</th>
@@ -39,8 +81,17 @@ class CartPage extends Component {
                     </thead>
 
                     <tbody>
-                        {this.cartItems}
+                        {this.cartItemsComponents}
                     </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td style={{ textAlign: 'right' }}>Итого: {this.state.totalPrice}</td>
+                        </tr>
+                    </tfoot>
                 </table>
             </div>
         );

@@ -1,3 +1,5 @@
+/*eslint operator-assignment: ["error", "never"]*/
+
 import React,
 {
   Component,
@@ -46,7 +48,7 @@ class CatalogItem extends Component {
 
         <img className="picture" src={picture} alt={item.name} />
 
-        <div className="descriprion">{item.descriprion}</div>
+        <div className="description">{item.description}</div>
         <div className="price">{item.price}</div>
 
         <button className="add-to-cart" onClick={this.addToCart}>Купить</button>
@@ -62,8 +64,8 @@ CatalogItem.propTypes = {
     index: PropTypes.number,
     isActive: PropTypes.bool,
     name: PropTypes.string,
-    descriprion: PropTypes.string,
-    price: PropTypes.string,
+    description: PropTypes.string,
+    price: PropTypes.number,
     picture: PropTypes.string
   })
 };
