@@ -6,7 +6,33 @@ import React,
 
 import { Link }  from 'react-router';
 
+const STATE = require('../../State.json');
+const cart = STATE.cart;
+import './CatalogItem.css';
+
+
 class CatalogItem extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.addToCart = this.addToCart.bind(this);
+  }
+
+  addToCart() {
+    let id = this.props.item._id;
+    let addedItem = cart.find(item => item._id === id);
+
+    if (addedItem) {
+      addedItem.quantity = addedItem.quantity + 1;
+    } else {
+      cart.push({
+        _id: id,
+        quantity: 1
+      });
+    }
+  }
+
   render() {
   let item = this.props.item;
   let picture = 'http://placehold.it/650x450';
@@ -22,6 +48,8 @@ class CatalogItem extends Component {
 
         <div className="descriprion">{item.descriprion}</div>
         <div className="price">{item.price}</div>
+
+        <button className="add-to-cart" onClick={this.addToCart}>Купить</button>
 
       </div>
     );
