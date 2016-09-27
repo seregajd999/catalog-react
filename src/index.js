@@ -30,7 +30,7 @@ ReactDOM.render((
       </Route>
       <Route path="/catalog">
         <IndexRoute component={CatalogListIndexPage} />
-        <Route path="/catalog/:categoryId" component={CatalogListPage} />
+        <Route path="/catalog/categories/:categoryId" component={CatalogListPage} />
       </Route>
       <Route path="/catalog/:itemId" component={CatalogItemPage} />
     </Route>

@@ -15,7 +15,7 @@ class CatalogCategory extends Component {
 
     return (
       <div className="CatalogCategory">
-        <div className="name"><Link to={ '/catalog/' + category.url}>{category.name}</Link></div>
+        <div className="name"><Link to={ '/catalog/categories/' + category.url}>{category.name}</Link></div>
         <div className="description">{category.description}</div>
       </div>
     );
