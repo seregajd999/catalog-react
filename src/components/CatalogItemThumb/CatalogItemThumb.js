@@ -6,6 +6,8 @@ import React,
 
 import { Link }  from 'react-router';
 
+import './CatalogItemThumb.css';
+
 class CatalogItemThumb extends Component {
   render() {
     let item = this.props.item;

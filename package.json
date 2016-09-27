@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/dmitrylebedev/catalog-react#readme",
   "devDependencies": {
-    "react-scripts": "^0.5.1"
+    "react-scripts": "^0.6.0"
   },
   "dependencies": {
     "react": "^15.3.2",
