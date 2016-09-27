@@ -27,7 +27,21 @@ class CartPage extends Component {
         return (
             <div className="CartPage">
                 <h3>Корзина</h3>
-                {this.cartItems}
+
+                <table style={{width: '100%'}}>
+                    <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Цена</th>
+                            <th>Количество</th>
+                            <th>Итого</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {this.cartItems}
+                    </tbody>
+                </table>
             </div>
         );
     }

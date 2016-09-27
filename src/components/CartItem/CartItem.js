@@ -14,12 +14,12 @@ class CartItem extends Component {
     let item = this.props.item;
 
     return (
-      <div className="CartItem">
-        <div className="name"><Link to={'/catalog/' + item._id}>{item.name}</Link></div>
-        <div className="price">{item.price}</div>
-        <div className="quantity">{item.quantity}</div>
-        <div className="price-total">{parseInt(item.price, 10) * item.quantity}</div>
-      </div>
+      <tr className="CartItem">
+        <td className="name"><Link to={'/catalog/' + item._id}>{item.name}</Link></td>
+        <td className="price">{item.price}</td>
+        <td className="quantity">{item.quantity}</td>
+        <td className="price-total">{parseInt(item.price, 10) * item.quantity}</td>
+      </tr>
     );
   }
 }

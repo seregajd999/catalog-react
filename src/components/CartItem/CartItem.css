@@ -1,7 +1,6 @@
 .CartItem
 {
   margin: 1em;
-  display: flex;
 }
 
 .CartItem .name
@@ -25,6 +24,9 @@
 
 .CartItem .price-total
 {
-  padding: 0 1em;
+  padding: 1em;
+  width: 5em;
   border-right: 1px solid lightblue;
+  text-align: center;
+  background: lightgoldenrodyellow;
 }
