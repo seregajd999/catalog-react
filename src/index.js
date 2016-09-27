@@ -12,10 +12,14 @@ import App from './App';
 import './index.css';
 
 import IndexPage from './pages/IndexPage';
+
 import CartPage from './pages/CartPage';
-import CatalogItemPage from './pages/CatalogItemPage';
+
 import CheckoutPage from './pages/CheckoutPage';
+
+import CatalogItemPage from './pages/CatalogItemPage';
 import CatalogListPage from './pages/CatalogListPage';
+import CatalogListIndexPage from './pages/CatalogListIndexPage';
 
 ReactDOM.render((
   <Router history={browserHistory}>
@@ -24,7 +28,10 @@ ReactDOM.render((
       <Route path="/cart" component={CartPage}>
         <Route path="/cart/checkout" component={CheckoutPage} />
       </Route>
-      <Route path="/catalog" component={CatalogListPage} />
+      <Route path="/catalog">
+        <IndexRoute component={CatalogListIndexPage} />
+        <Route path="/catalog/:categoryId" component={CatalogListPage} />
+      </Route>
       <Route path="/catalog/:itemId" component={CatalogItemPage} />
     </Route>
   </Router>
