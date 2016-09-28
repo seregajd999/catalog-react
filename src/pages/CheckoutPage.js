@@ -1,21 +1,25 @@
 import React,
 {
-    Component
+  Component
 } from 'react';
 
+import CheckoutForm from '../components/CheckoutForm/CheckoutForm';
+
+const STATE = require('../State.json');
+
+
 class CheckoutPage extends Component {
-    render() {
-        return (
-            <div className="CheckoutPage">
-                CheckoutPage
-            </div>
-        );
-    }
+  render() {
+    console.log("STATE.order: ", STATE.order);
+
+    return (
+      <div className="CheckoutPage">
+        <h3>Оформление доставки</h3>
+
+        <CheckoutForm client={STATE.order.client} />
+      </div>
+    );
+  }
 }
 
-CheckoutPage.propTypes = {
-
-};
-
 export default CheckoutPage;
-
