@@ -18,6 +18,7 @@ class CartPage extends Component {
     };
     
     this.setItemQuantity = this.setItemQuantity.bind(this);
+    this.submitOrder = this.submitOrder.bind(this);
     
     this.cartItems = STATE.cart.map(cartItem => {
       
@@ -68,6 +69,10 @@ class CartPage extends Component {
     STATE.cart = this.cartItems;
   }
   
+  submitOrder() {
+    console.log('TODO: order');
+  }
+  
   render() {
     return (
       <div className="CartPage">
@@ -98,6 +103,12 @@ class CartPage extends Component {
           </tr>
           </tfoot>
         </table>
+        
+        <button
+          onClick={this.submitOrder}
+          className="order">
+          Оформить заказ
+        </button>
       </div>
     );
   }
