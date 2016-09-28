@@ -4,8 +4,8 @@
             "_id": "57e7c35d5b04a172f66f5e5a",
             "index": 0,
             "isActive": false,
-            "name": "culpa laboris",
-            "description": "Adipisicing laborum esse sint laborum id fugiat duis exercitation adipisicing veniam esse voluptate. Exercitation dolore ea nostrud dolor id. Nulla occaecat non culpa adipisicing Lorem esse esse eu aliquip excepteur commodo laborum laboris.",
+            "name": "Товар номер 1",
+            "description": "Описание товара номер один. Несколько предложений о товаре номер 1",
             "price": 2490,
             "picture": "http://placehold.it/150x150"
         },
@@ -13,8 +13,8 @@
             "_id": "57e7c35d3ed054bbdde87b66",
             "index": 1,
             "isActive": true,
-            "name": "nisi eu",
-            "description": "Cupidatat consequat reprehenderit dolor sint laborum. Cupidatat sint labore ex ullamco non laboris laboris. Proident officia elit voluptate amet ex aliquip veniam elit.",
+            "name": "Товар номер 2",
+            "description": "Описание товара номер два. Несколько предложений о товаре номер 2",
             "price": 1763,
             "picture": "http://placehold.it/150x150"
         },
@@ -22,8 +22,8 @@
             "_id": "57e7c35da0c55508aec1deac",
             "index": 2,
             "isActive": false,
-            "name": "culpa dolore",
-            "description": "Aute nostrud fugiat pariatur ipsum cupidatat officia ipsum veniam. Occaecat nostrud proident esse ipsum. Ex ipsum commodo ullamco consequat et voluptate voluptate Lorem occaecat.",
+            "name": "Товар номер 3",
+            "description": "Описание товара номер три. Несколько предложений о товаре номер 3",
             "price": 2397,
             "picture": "http://placehold.it/150x150"
         },
@@ -31,8 +31,8 @@
             "_id": "57e7c35d402867568f81b68b",
             "index": 3,
             "isActive": false,
-            "name": "cupidatat tempor",
-            "description": "Id sint cupidatat aliqua aute eu veniam. Non pariatur mollit ipsum et. Sint tempor laboris irure reprehenderit irure laborum tempor aute adipisicing irure eiusmod.",
+            "name": "Товар номер 4",
+            "description": "Описание товара номер четыре. Несколько предложений о товаре номер 4",
             "price": 1419,
             "picture": "http://placehold.it/150x150"
         },
@@ -40,99 +40,9 @@
             "_id": "57e7c35d6e3ef4516d1af117",
             "index": 4,
             "isActive": false,
-            "name": "voluptate consequat",
-            "description": "Fugiat amet ad esse dolor elit reprehenderit eu consectetur fugiat Lorem consequat irure amet elit. Minim duis eu laboris nulla velit commodo aliqua proident sint deserunt ea amet. Cupidatat ex aliquip anim minim officia id duis exercitation anim.",
+            "name": "Товар номер 5",
+            "description": "Описание товара номер пять. Несколько предложений о товаре номер 5",
             "price": 3951,
-            "picture": "http://placehold.it/150x150"
-        },
-        {
-            "_id": "57e7c35d031a090d7ad6165c",
-            "index": 5,
-            "isActive": false,
-            "name": "dolor quis",
-            "description": "Sunt magna aute magna ad ex ad voluptate aute. Non id culpa est est aliquip pariatur sunt occaecat laboris dolor pariatur labore laboris. Quis eu officia duis tempor exercitation aliquip elit laboris mollit cupidatat enim adipisicing minim.",
-            "price": 3954,
-            "picture": "http://placehold.it/150x150"
-        },
-        {
-            "_id": "57e7c35dcd61f94f8aae9b06",
-            "index": 6,
-            "isActive": true,
-            "name": "consequat Lorem",
-            "description": "Deserunt ipsum esse aliqua veniam nulla minim consequat sit occaecat pariatur minim id eu labore. Sint sit cupidatat ad reprehenderit. Ipsum sit laborum ullamco labore nostrud labore minim cupidatat mollit esse.",
-            "price": 1239,
-            "picture": "http://placehold.it/150x150"
-        },
-        {
-            "_id": "57e7c35d93aaccac892ccacb",
-            "index": 7,
-            "isActive": false,
-            "name": "in eiusmod",
-            "description": "Exercitation nostrud sint commodo cillum id enim laboris. Ea laboris incididunt labore sunt quis tempor Lorem fugiat deserunt pariatur nisi laboris Lorem. Laboris aliqua esse et labore elit enim.",
-            "price": 2236,
-            "picture": "http://placehold.it/150x150"
-        },
-        {
-            "_id": "57e7c35d91c8cc317b1be5ab",
-            "index": 8,
-            "isActive": false,
-            "name": "excepteur fugiat",
-            "description": "In tempor sunt Lorem dolore labore eiusmod ut non consequat cupidatat consequat consequat sunt duis. Do excepteur voluptate adipisicing minim ut quis. Id in qui nostrud reprehenderit adipisicing dolore ea minim occaecat qui elit.",
-            "price": 1606,
-            "picture": "http://placehold.it/150x150"
-        },
-        {
-            "_id": "57e7c35d08c3adff0ab8b181",
-            "index": 9,
-            "isActive": false,
-            "name": "pariatur nostrud",
-            "description": "Reprehenderit ut et nostrud fugiat ex. Occaecat id non consequat sint commodo exercitation adipisicing laborum in ex commodo non nostrud. Non commodo elit eu in aute ipsum.",
-            "price": 3765,
-            "picture": "http://placehold.it/150x150"
-        },
-        {
-            "_id": "57e7c35d22c4d44d07236556",
-            "index": 10,
-            "isActive": true,
-            "name": "velit ad",
-            "description": "Mollit ea cillum dolor nostrud ea ea aliquip et nisi. Eu laboris minim adipisicing duis labore sunt exercitation officia id. Amet velit voluptate ex Lorem commodo labore laborum irure anim cillum enim duis consectetur.",
-            "price": 2430,
-            "picture": "http://placehold.it/150x150"
-        },
-        {
-            "_id": "57e7c35d55768a955c15fc50",
-            "index": 11,
-            "isActive": true,
-            "name": "eu est",
-            "description": "Deserunt nisi deserunt aute in. Enim culpa enim do officia consequat sit consequat irure magna. Incididunt aute ea exercitation culpa eu in id aute.",
-            "price": 2442,
-            "picture": "http://placehold.it/150x150"
-        },
-        {
-            "_id": "57e7c35d1f7ab762d04643dc",
-            "index": 12,
-            "isActive": false,
-            "name": "tempor exercitation",
-            "description": "Eiusmod qui enim nulla labore consectetur aute in esse ad fugiat duis duis deserunt. Pariatur sint magna consectetur laborum sint eu ex. Pariatur consequat ea magna tempor sit anim non Lorem dolore est laborum.",
-            "price": 1442,
-            "picture": "http://placehold.it/150x150"
-        },
-        {
-            "_id": "57e7c35d1c2cc4b0c40091cf",
-            "index": 13,
-            "isActive": true,
-            "name": "Lorem laboris",
-            "description": "Quis cupidatat dolor nostrud enim magna aliquip laborum qui. Et aliquip ipsum exercitation voluptate incididunt id pariatur fugiat Lorem do sit ullamco. Voluptate qui ad sit adipisicing Lorem ut quis.",
-            "price": 1617,
-            "picture": "http://placehold.it/150x150"
-        },
-        {
-            "_id": "57e7c35d280dcd88d782fe8e",
-            "index": 14,
-            "isActive": false,
-            "name": "velit exercitation",
-            "description": "Irure velit dolore nulla duis proident pariatur ex aliquip quis aliquip ad sint minim excepteur. Commodo est nostrud velit laboris elit incididunt mollit veniam laboris eu ut ex deserunt. Proident est id duis dolore nisi.",
-            "price": 1954,
             "picture": "http://placehold.it/150x150"
         }
     ],
@@ -179,16 +89,12 @@
     ],
     "cart": [
         {
-            "_id": "57e7c35d5b04a172f66f5001",
-            "name": "test product_1 in cart",
-            "price": 2490,
-            "quantity": 2
+            "_id": "57e7c35d5b04a172f66f5e5a",
+            "quantity": 1
         },
         {
-            "_id": "57e7c35d5b04a172f66f5002",
-            "name": "test product_2 in cart",
-            "price": 1560,
-            "quantity": 1
+            "_id": "57e7c35d3ed054bbdde87b66",
+            "quantity": 2
         }
     ]
 }
