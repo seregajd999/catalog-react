@@ -6,6 +6,8 @@ import React,
 
 import { Link }  from 'react-router';
 
+import './CatalogItemThumb.css';
+
 class CatalogItemThumb extends Component {
   render() {
     let item = this.props.item;
@@ -17,7 +19,7 @@ class CatalogItemThumb extends Component {
         </div>
 
         <img className="picture" src={item.picture} alt={item.name} />
-        <div className="descriprion">{item.descriprion}</div>
+        <div className="description">{item.description}</div>
         <div className="price">{item.price}</div>
       </div>
     );
@@ -30,8 +32,8 @@ CatalogItemThumb.propTypes = {
     index: PropTypes.number,
     isActive: PropTypes.bool,
     name: PropTypes.string,
-    descriprion: PropTypes.string,
-    price: PropTypes.string,
+    description: PropTypes.string,
+    price: PropTypes.number,
     picture: PropTypes.string
   })
 };

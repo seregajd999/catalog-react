@@ -5,6 +5,8 @@ import React,
 
 import CatalogItemThumb from '../components/CatalogItemThumb/CatalogItemThumb';
 
+import './CatalogListPage.css';
+
 const STATE = require('../State.json');
 
 class CatalogListPage extends Component {
