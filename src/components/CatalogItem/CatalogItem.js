@@ -9,7 +9,7 @@ import React,
 import { Link }  from 'react-router';
 
 const STATE = require('../../State.json');
-const cart = STATE.cart;
+
 import './CatalogItem.css';
 
 
@@ -23,12 +23,12 @@ class CatalogItem extends Component {
 
   addToCart() {
     let id = this.props.item._id;
-    let addedItem = cart.find(item => item._id === id);
+    let addedItem = STATE.cart.find(item => item._id === id);
 
     if (addedItem) {
       addedItem.quantity = addedItem.quantity + 1;
     } else {
-      cart.push({
+      STATE.cart.push({
         _id: id,
         quantity: 1
       });
@@ -36,8 +36,8 @@ class CatalogItem extends Component {
   }
 
   render() {
-  let item = this.props.item;
-  let picture = 'http://placehold.it/650x450';
+    let item = this.props.item;
+    let picture = 'http://placehold.it/650x450';
 
     return (
       <div className="CatalogItem">
@@ -46,7 +46,7 @@ class CatalogItem extends Component {
           <Link to={'/catalog/' + item._id}>{item.name}</Link>
         </div>
 
-        <img className="picture" src={picture} alt={item.name} />
+        <img className="picture" src={picture} alt={item.name}/>
 
         <div className="description">{item.description}</div>
         <div className="price">{item.price}</div>
