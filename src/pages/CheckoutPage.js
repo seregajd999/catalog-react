@@ -3,6 +3,8 @@ import React,
   Component
 } from 'react';
 
+import { browserHistory } from 'react-router';
+
 import UserInfoForm from '../components/UserInfoForm/UserInfoForm';
 
 import { mongoObjectId } from '../utils';
@@ -37,7 +39,10 @@ class CheckoutPage extends Component {
   saveOrder(client) {
     user = Object.assign(user, client);
 
+    const orderId = mongoObjectId();
+
     let order = {
+      _id: orderId,
       user: user,
       cart: STATE.cart
     };
@@ -45,7 +50,7 @@ class CheckoutPage extends Component {
     STATE.orders.push(order);
     STATE.cart = [];
 
-    console.log("order: ", order);
+    browserHistory.push('/orders/' + orderId);
   }
 
   render() {

@@ -15,6 +15,8 @@ import IndexPage from './pages/IndexPage';
 
 import CartPage from './pages/CartPage';
 
+import OrderItemPage from './pages/OrderItemPage';
+
 import CheckoutPage from './pages/CheckoutPage';
 
 import CatalogItemPage from './pages/CatalogItemPage';
@@ -37,6 +39,8 @@ ReactDOM.render((
       </Route>
 
       <Route path="/catalog/:itemId" component={CatalogItemPage} />
+
+      <Route path="/orders/:itemId" component={OrderItemPage}/>
 
     </Route>
   </Router>
