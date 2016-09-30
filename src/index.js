@@ -27,8 +27,9 @@ ReactDOM.render((
 
       <IndexRoute component={IndexPage} />
 
-      <Route path="/cart" component={CartPage} />
-      <Route path="/cart/checkout" component={CheckoutPage} />
+      <Route path="/cart" component={CartPage}>
+        <Route path="/cart/checkout" component={CheckoutPage}/>
+      </Route>
 
       <Route path="/catalog">
         <IndexRoute component={CatalogListIndexPage} />

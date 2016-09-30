@@ -5,7 +5,8 @@ import React,
 } from 'react';
 
 
-class CheckoutForm extends Component {
+
+class UserInfoForm extends Component {
 
   constructor(props) {
     super(props);
@@ -16,22 +17,17 @@ class CheckoutForm extends Component {
     this.handlePhoneChange = this.handlePhoneChange.bind(this);
     this.handleInfoChange = this.handleInfoChange.bind(this);
 
-    this.state = {};
-  }
-
-  componentDidMount() {
-    this.setState(Object.assign({}, this.props.client));
+    this.state = this.props.user;
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log("e: ", e);
+
+    this.props.submitOrder(this.state);
   }
 
   handleNameChange(e) {
     this.setState({ name: e.target.value });
-
-    console.log("this.state : ", this.state );
   }
 
   handleAddressChange(e) {
@@ -93,8 +89,8 @@ class CheckoutForm extends Component {
   }
 }
 
-CheckoutForm.propTypes = {
-  client: PropTypes.shape({
+UserInfoForm.propTypes = {
+  user: PropTypes.shape({
     name: PropTypes.string,
     address: PropTypes.string,
     phone: PropTypes.string,
@@ -102,4 +98,4 @@ CheckoutForm.propTypes = {
   })
 };
 
-export default CheckoutForm;
+export default UserInfoForm;

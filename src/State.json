@@ -1,4 +1,6 @@
 {
+  "cookie_user_id": "57e7c35d5b04a172f66f5e00",
+
   "products": [
     {
       "_id": "57e7c35d5b04a172f66f5e5a",
@@ -97,13 +99,21 @@
       "quantity": 2
     }
   ],
-  "order": {
-    "client": {
+  "orders": [
+    {
+      "_id": "57e7c35d5b04a172f66f5e11",
+      "user_id": "57e7c35d5b04a172f66f5e00",
+      "state": "processing",
+      "cart": []
+    }
+  ],
+  "users": [
+    {
+      "_id": "57e7c35d5b04a172f66f5e00",
       "name": "Alex",
       "address": "Санкт-Петербург, Бассейная 55",
       "phone": "+7-123-567-89-90",
       "info": "Дополнительная информация по доставке, удобное время"
-    },
-    "cart": {}
-  }
+    }
+  ]
 }

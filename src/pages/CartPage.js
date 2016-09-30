@@ -72,17 +72,6 @@ class CartPage extends Component {
   }
 
   submitOrder() {
-    STATE.order = {
-      "client": {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "info": ""
-      },
-
-      "cart": Object.assign({}, this.cartItems)
-    };
-
     browserHistory.push('/cart/checkout');
   }
 
@@ -117,11 +106,15 @@ class CartPage extends Component {
           </tfoot>
         </table>
 
+
+
         <button
           onClick={this.submitOrder}
           className="order">
           Оформить заказ
         </button>
+
+        {this.props.children}
       </div>
     );
   }
