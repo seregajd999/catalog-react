@@ -43,6 +43,7 @@ class CheckoutPage extends Component {
 
     let order = {
       _id: orderId,
+      status: 'processing',
       user: user,
       cart: STATE.cart
     };

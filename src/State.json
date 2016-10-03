@@ -99,14 +99,7 @@
       "quantity": 2
     }
   ],
-  "orders": [
-    {
-      "_id": "57e7c35d5b04a172f66f5e11",
-      "user_id": "57e7c35d5b04a172f66f5e00",
-      "state": "processing",
-      "cart": []
-    }
-  ],
+  "orders": [],
   "users": [
     {
       "_id": "57e7c35d5b04a172f66f5e00",
