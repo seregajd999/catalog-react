@@ -15,6 +15,8 @@ import IndexPage from './pages/IndexPage';
 
 import CartPage from './pages/CartPage';
 
+import OrderItemPage from './pages/OrderItemPage';
+
 import CheckoutPage from './pages/CheckoutPage';
 
 import CatalogItemPage from './pages/CatalogItemPage';
@@ -24,15 +26,22 @@ import CatalogListIndexPage from './pages/CatalogListIndexPage';
 ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
+
       <IndexRoute component={IndexPage} />
+
       <Route path="/cart" component={CartPage}>
-        <Route path="/cart/checkout" component={CheckoutPage} />
+        <Route path="/cart/checkout" component={CheckoutPage}/>
       </Route>
+
       <Route path="/catalog">
         <IndexRoute component={CatalogListIndexPage} />
         <Route path="/catalog/categories/:categoryId" component={CatalogListPage} />
       </Route>
+
       <Route path="/catalog/:itemId" component={CatalogItemPage} />
+
+      <Route path="/orders/:itemId" component={OrderItemPage}/>
+
     </Route>
   </Router>
   ), document.getElementById('root')
