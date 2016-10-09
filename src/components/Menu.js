@@ -3,7 +3,9 @@ import React, {
   PropTypes
 } from 'react';
 
-import { Link }  from 'react-router';
+import { Nav, NavItem, Navbar } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
+// import { Link }  from 'react-router';
 
 import './Menu.css';
 
@@ -13,16 +15,18 @@ class Menu extends Component {
   render() {
     let items = this.props.items.map((item) => {
       return (
-        <li key={item.url}>
-          <Link to={item.url}>{item.name}</Link>
-        </li>
+        <LinkContainer to={item.url} key={item.url}>
+          <NavItem >{item.name}</NavItem>
+        </LinkContainer>
         );
     });
 
     return (
-      <nav className="Menu">
-        <ul>{items}</ul>
-      </nav>
+      <Navbar className="Menu">
+        <Nav>
+          {items}
+        </Nav>
+      </Navbar>
     );
   }
 }

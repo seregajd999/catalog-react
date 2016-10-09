@@ -4,13 +4,12 @@ body {
   padding: 0;
 }
 
-.App {
-  margin: 0 auto;
-  padding: 0 25px;
-  width: 960px;
-
+.content {
+  flex: 1;
 }
 
-.content {
-  min-height: 700px;
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
